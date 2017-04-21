@@ -372,6 +372,8 @@ dist/
 # dependencies
 /node_modules
 
+/jspm_packages
+
 # IDEs and editors
 /.idea
 .project
