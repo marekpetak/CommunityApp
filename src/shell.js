@@ -1,5 +1,14 @@
 export class Shell {
     constructor() {
-        this.parentprop = "Hug your parents!";
+        
+    }
+
+    configureRouter(config, router){
+        this.router = router;
+        config.title = "Capital Area .NEt USer Group";
+        config.map([
+            {route: '', moduleId: 'events'}
+        ]);
+
     }
 }
