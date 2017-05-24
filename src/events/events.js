@@ -1,15 +1,39 @@
-import { DataCache} from 'dataCache';
+import { DataRepository} from 'services/dataRepository';
 import { inject } from 'aurelia-framework';
+import { Router } from 'aurelia-router';
 
-@inject(DataCache)
+@inject(DataRepository, Router)
 export class Events {
-    constructor(dataCache) {
-        this.events = [
-            { id: 1, title: "Aurelia Fundamentals" },
-            { id: 2, title: "Data-Centric SPAs with BreezeJS" }
-        ];
-        this.cache = dataCache;
-        this.cache.data.push('a');
+    constructor(dataRepository, router) {
+        this.dataRepository = dataRepository;
+        this.router = router;
+    }
 
+    goToDiscussion() {
+        this.router.navigate('#/discussion');
+    }
+
+    activate(params) {
+        this.dataRepository.getEvents().then(allEvents => { 
+            if(params.speaker || params.topic){
+                var filteredResults = [];
+				allEvents.forEach(item=> {
+					if (params.speaker && item.speaker.toLowerCase().indexOf(params.speaker.toLowerCase()) >= 0) {
+						filteredResults.push(item);
+					}
+					if (params.topic && item.title.toLowerCase().indexOf(params.topic.toLowerCase()) >= 0) {
+						filteredResults.push(item);
+					}
+				});
+				this.events = filteredResults;
+            }
+            else {
+                this.events = allEvents;
+            }
+
+            this.events.forEach(item => 
+                item.detailUrl = this.router.generate('eventDetail', {eventId: item.id})
+            );
+        });
     }
 }

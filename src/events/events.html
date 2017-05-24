@@ -2,4 +2,7 @@
 	<div repeat.for="event of events">
 		<compose model.bind="event" view="events/event.html"></compose>
 	</div>
+	<div>
+		<button click.trigger='goToDiscussion()'>discussion</button>
+	</div>
 </template>
