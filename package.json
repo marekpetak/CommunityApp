@@ -1,36 +1,37 @@
 {
-    "name": "CommunityApp",
-    "version": "1.0.0",
-    "description": "Aurelia Fundamentals App from Pluralsight",
-    "main": "index.js",
-    "scripts": {
-        "dev": "lite-server"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/marekpetak/CommunityApp.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/marekpetak/CommunityApp/issues"
-    },
-    "homepage": "https://github.com/marekpetak/CommunityApp#readme",
+  "name": "CommunityApp",
+  "version": "1.0.0",
+  "description": "Aurelia Fundamentals App from Pluralsight",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marekpetak/CommunityApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marekpetak/CommunityApp/issues"
+  },
+  "homepage": "https://github.com/marekpetak/CommunityApp#readme",
+  "dependencies": {
+    "jspm": "^0.16.53",
+    "lite-server": "^2.3.0"
+  },
+  "jspm": {
     "dependencies": {
-        "jspm": "^0.16.53",
-        "lite-server": "^2.3.0"
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^2.1.1",
+      "aurelia-framework": "npm:aurelia-framework@^1.1.2",
+      "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.2.1",
+      "bootstrap": "github:twbs/bootstrap@^3.3.7"
     },
-    "jspm": {
-        "dependencies": {
-            "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^2.1.1",
-            "aurelia-framework": "npm:aurelia-framework@^1.1.2",
-            "bootstrap": "github:twbs/bootstrap@^3.3.7"
-        },
-        "devDependencies": {
-            "babel": "npm:babel-core@^5.8.24",
-            "babel-runtime": "npm:babel-runtime@^5.8.24",
-            "core-js": "npm:core-js@^1.1.4"
-        }
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     }
+  }
 }
