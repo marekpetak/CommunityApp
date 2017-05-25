@@ -1,5 +1,4 @@
-export var eventsData = [
-  {
+export var eventsData = [{
     "id": 124,
     "description": "REST is an architectural style for building HTTP Web API services that is often misunderstood - many people claim to be building RESTful services but do not know the things they need to be doing to truly qualify as a RESTful service. In this session, you will learn the fundamental architectural constraints that define REST and how you can implement those constraints using ASP.NET Web API. You’ll learn what things you need to do to implement the capabilities that all Web API services should do, such as focus on resources, representations, URIs, content-negotiation, HTTP verbs and headers and so on, as well as the concept of hypermedia and how it pertains to RESTful services.",
     "dateTime": "2013-02-26T23:30:00.000Z",
@@ -243,6 +242,22 @@ export var eventsData = [
     "id": 173,
     "description": "Node.js is an amazing technology that is growing by leaps and bounds.  Many web developers already have an understanding of the fundamentals of JavaScript, but their knowledge is strictly confined to the browser.  WIth node.js, developers are exposed to a whole new world by introducing JavaScript as a first class language for server-side applications.  In this talk, we'll take a structured look at node.js from a .NET developers perspective.  We'll discuss what a .NET developer needs to know get started with node.js, and hopefully we'll expand your horizons!",
     "dateTime": "2016-01-26T23:30:00.000Z",
+    "title": "Getting Started with NodeJS - Kevin Griffin (MVP)",
+    "speaker": "Kevin Griffin",
+    "image": "KevinGriffin.jpg"
+  },
+  {
+    "id": 174,
+    "description": "NEW ONE 01",
+    "dateTime": "2018-01-26T23:30:00.000Z",
+    "title": "Getting Started with NodeJS - Kevin Griffin (MVP)",
+    "speaker": "Kevin Griffin",
+    "image": "KevinGriffin.jpg"
+  },
+  {
+    "id": 175,
+    "description": "NEW ONE 02",
+    "dateTime": "2017-08-26T23:30:00.000Z",
     "title": "Getting Started with NodeJS - Kevin Griffin (MVP)",
     "speaker": "Kevin Griffin",
     "image": "KevinGriffin.jpg"
